@@ -1,3 +1,7 @@
+## Description
+
+This is a React app created during **_Section 12: Understanding Hooks in React!_**  from the Udemy course [Modern React with Redux [2020 update]](https://www.udemy.com/course/react-redux/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

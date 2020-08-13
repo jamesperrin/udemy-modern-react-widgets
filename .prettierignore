@@ -1,0 +1,3 @@
+# do not run Prettier againt HTML files
+*.htm
+*.html
