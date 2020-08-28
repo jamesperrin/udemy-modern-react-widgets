@@ -7,6 +7,8 @@
     "quoteProps": "consistent",
     "bracketSpacing": true,
     "htmlWhitespaceSensitivity": "ignore",
+    "arrowParens": "always",
     "jsxSingleQuote": false,
-    "arrowParens": "always"
+    "jsxBracketSameLine": true
+
   }
