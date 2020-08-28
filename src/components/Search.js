@@ -32,14 +32,20 @@ const Search = () => {
         };
 
         search();
-
     }, [debouncedTerm]);
 
     const renderedResults = results.map((results) => {
         return (
             <div className="item" key={results.pageid}>
                 <div className="right floated content">
-                    <a href={`https://en.wikipedia.org?curid=${results.pageid}`} className="ui button" title={`Go to ${results.title}`} target="_blank" rel="noopener noreferrer">Go</a>
+                    <a
+                        href={`https://en.wikipedia.org?curid=${results.pageid}`}
+                        className="ui button"
+                        title={`Go to ${results.title}`}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Go
+                    </a>
                 </div>
                 <div className="content">
                     <div className="header">{results.title}</div>
