@@ -41,6 +41,9 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
                     <div className={`menu  ${open ? 'visible transition' : ''}`}>{renderedOptions}</div>
                 </div>
             </div>
+            <div className="ui grid" style={{ color: selected.value, padding: '1em' }}>
+                <p>This text is {selected.value}!</p>
+            </div>
         </div>
     );
 };

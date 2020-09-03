@@ -33,7 +33,8 @@ export default () => {
             <button className="ui button primary" onClick={() => setShowDropdown(!showDropdown)}>
                 Toggle Dropdown
             </button>
-            {showDropdown ? <Dropdown selected={selected} onSelectedChange={setSelected} options={options} /> : null}
+            {showDropdown
+            ? <Dropdown selected={selected} onSelectedChange={setSelected} options={options} /> : null}
         </div>
     );
 };
