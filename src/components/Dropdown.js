@@ -32,15 +32,22 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
     });
 
     return (
-        <div className="ui form" ref={ref}>
-            <div className="field">
-                <label className="lable">{label}</label>
-                <div className={`ui selection dropdown ${open ? 'visible active' : ''}`} onClick={() => setOpen(!open)}>
-                    <i className="dropdown icon"></i>
-                    <div className="text">{selected.label}</div>
-                    <div className={`menu  ${open ? 'visible transition' : ''}`}>{renderedOptions}</div>
+        <div>
+            <section className="ui form" ref={ref}>
+                <div className="field">
+                    <label className="lable">{label}</label>
+                    <div
+                        className={`ui selection dropdown ${open ? 'visible active' : ''}`}
+                        onClick={() => setOpen(!open)}>
+                        <i className="dropdown icon"></i>
+                        <div className="text">{selected.label}</div>
+                        <div className={`menu  ${open ? 'visible transition' : ''}`}>{renderedOptions}</div>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section className="ui grid" style={{ color: selected.value, padding: '1em', marginTop: '1vh' }}>
+                <h2>{selected.label}</h2>
+            </section>
         </div>
     );
 };
