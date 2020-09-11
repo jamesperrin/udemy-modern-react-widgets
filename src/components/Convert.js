@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import config from '../config/config';
 import axios from 'axios';
 
 const Convert = ({ language, text }) => {
@@ -19,13 +18,13 @@ const Convert = ({ language, text }) => {
     useEffect(() => {
         const doTranslation = async () => {
             const { data } = await axios.post(
-                config.ApiUrl,
+                'https://translation.googleapis.com/language/translate/v2',
                 {},
                 {
                     params: {
                         q: debouncedText,
                         target: language.value,
-                        key: config.ApiKeyValue,
+                        key: 'AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM',
                     },
                 }
             );
